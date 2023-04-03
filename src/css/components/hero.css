@@ -1,17 +1,123 @@
 .hero {
-  color: red;
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  background-image: url(../images/header/header_hero.png);
+  background-blend-mode: overlay;
+  background-color: var(--hero-background);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 
+.second-hero {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  background-image: url(../../images/FEND-Coffee-beans-hand-2.png);
+  background-blend-mode: overlay;
+  background-color: var(--hero-background);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.third-hero {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  background-image: url(../../images/FEND-Coffee-shop.png);
+  background-blend-mode: overlay;
+  background-color: var(--hero-background);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
 .hero-title {
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate(50%,-50%);
+  transform: translate(50%, -50%);
   z-index: 10;
 }
 
 .hero-img {
   filter: grayscale(50%);
   z-index: 5;
+}
+
+.hero-h1 {
+  font-size: 64px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+}
+.header-text {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+.icon-container {
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+.header-button {
+  width: 160px;
+  background: #1a1a1a;
+  color: white;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.header-button:hover {
+  background: #3a3734;
+}
+.header-button:active {
+  background: #d7be9d;
+}
+.header-button-container {
+  position: absolute;
+  bottom: 60px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.rustica-logo {
+  height: 35px;
+  width: 35px;
+  filter: invert(94%) sepia(0%) saturate(26%) hue-rotate(104deg)
+    brightness(105%) contrast(108%);
+}
+.menu-icon {
+  float: right;
+  filter: invert(94%) sepia(0%) saturate(26%) hue-rotate(104deg)
+    brightness(105%) contrast(108%);
+  height: 25px;
+  width: 25px;
+  margin-top: 5px;
 }

@@ -1,22 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index Page</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kaffeerösterei Rustica</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Oregano"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    {{> header }}
-    <h1>Hello World Test!</h1>
-    <main>
-      <a href="/sub-page/">Link to Subpage</a>
-      <div>Home</div>
-    </main>
-    <script src="/js/index.js" type="module"></script>
+    <div class="hero">
+      <div class="icon-container">
+        <img
+          class="rustica-logo"
+          src="images/icons/rustica-logo.svg"
+          alt="Rustica Logo"
+        />
+        <img class="menu-icon" src="images/icons/menu-icon.svg" alt="Menü" />
+      </div>
+      <h1 class="hero-h1">Rustica</h1>
+      <p class="header-text">Bio und Fair seit 1991</p>
+      <div class="header-button-container">
+        <a class="header-button" href="shop/index.html">Zum Shop</a>
+      </div>
+    </div>
+    <div>
+        <a href="sub-pages/das-cafe.html">Das Café</a>
+        <a href="sub-pages/herkunft.html">Herkunft</a>
+        <a href="sub-pages/shop.html">Shop</a>
+        <a href="sub-pages/impressum.html">Impressum</a>
+    </div>
+      <section class="main-cafe">
+        <div class="main-cafe__container">
+          <div class="main-cafe__text">
+            <div class="main-cafe__heading">
+              <h2 class="h2__m">Rösterei & Café</h2>
+            </div>
+            <div class="main-cafe__article">
+              <p class="article">
+                Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen
+                Rösterei, serviert im gemütlichen Café in der Innenstadt.
+              </p>
+            </div>
+
+            <div class="main-cafe__wo">
+              <div class="main-cafe__wo--besuchen">
+                <p class="article">Komm uns besuchen!</p>
+                <p class="article">Fraunhoferstr. 13, Kiel</p>
+              </div>
+              <div class="main-cafe__wo--oeffnung">
+                <p class="article">Mo – Fr 8–18 Uhr</p>
+                <p class="article">Sa 11–18 Uhr</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-cafe__img">
+            <img
+              class="main-cafe__img--img-r"
+              src="images/FEND-Coffee-shop.jpg"
+              alt="Das Café"
+            />
+          </div>
+        </div>       
+      </section>
+      <h3>Bio und Fair</h3>
+      <div>
+        <p>
+          Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+          Konsonantien leben die Blindtexte. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio Qualität
+        </p>
+      </div>
+    <div>
+        <img src="./images/FEND-coffee-plant.png" style="max-width: 50%; display: flex; position: relative;"> 
+    </div>
+    <section class="section-products">
+        <h2>Entdecke unsere Kaffee-Sorten</h2>
+        <div class="flex-container-products">
+
+          <article class="product">
+            <div class="product-image-container">
+              <img class="product-image" src="images/product-image.jpg" alt="Kaffee aus Costa Rica">
+            </div>
+                <h3>Costa Rica</h3>
+                <p>6,90€ - 26,90€</p>
+            <section>
+              <img src="images/icons/Icon-Kaffee-Bohnen.svg" alt="Kaffeebohnen" class="product-icons">
+              <img src="images/icons/Icon-French-Press.svg" alt="Frenchpress" class="product-icons">
+              <img src="images/icons/Icon-Kaffee-Schaufel.svg" alt="Kaffeeschaufel" class="product-icons">
+            </section>
+          </article>
+
+          <article class="product">
+            <div class="product-image-container">
+              <img class="product-image" src="images/product-image.jpg" alt="Kaffee aus Costa Rica">
+            </div>
+                <h3>Costa Rica</h3>
+                <p>6,90€ - 26,90€</p>
+            <section>
+              <img src="images/icons/Icon-Kaffee-Bohnen.svg" alt="Kaffeebohnen" class="product-icons">
+              <img src="images/icons/Icon-French-Press.svg" alt="Frenchpress" class="product-icons">
+              <img src="images/icons/Icon-Kaffee-Schaufel.svg" alt="Kaffeeschaufel" class="product-icons">
+            </section>
+            </article>
+
+          <article class="product">
+            <div class="product-image-container">
+              <img class="product-image" src="images/product-image.jpg" alt="Kaffee aus Costa Rica">
+            </div>
+                <h3>Costa Rica</h3>
+                <p>6,90€ - 26,90€</p>
+            <section>
+              <img src="images/icons/Icon-Kaffee-Bohnen.svg" alt="Kaffeebohnen" class="product-icons">
+              <img src="images/icons/Icon-French-Press.svg" alt="Frenchpress" class="product-icons">
+              <img src="images/icons/Icon-Kaffee-Schaufel.svg" alt="Kaffeeschaufel" class="product-icons">
+            </section>
+            </article>
+
+          <article class="product">
+            <div class="product-image-container">
+              <img class="product-image" src="images/product-image.jpg" alt="Kaffee aus Costa Rica">
+            </div>
+                <h3>Costa Rica</h3>
+                <p>6,90€ - 26,90€</p>
+            <section>
+              <img src="images/icons/Icon-Kaffee-Bohnen.svg" alt="Kaffeebohnen" class="product-icons">
+              <img src="images/icons/Icon-French-Press.svg" alt="Frenchpress" class="product-icons">
+              <img src="images/icons/Icon-Kaffee-Schaufel.svg" alt="Kaffeeschaufel" class="product-icons">
+            </section>
+            </article>
+
+        </div>
+        <button class="button">alle Produkte</button>
+    </section>
+    <div class="herkunft">
+      <h3 class="h3">Herkunft</h3>
+      <p>
+        Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+        Konsonantien leben die Blindtexte.Und das alles in bester Bio Qualität..
+      </p>
+    </div>
+    <div class="das-steckt-drin"> 
+      <h2 class="h2">Das steckt drin</h2>
+      <div class="das-steckt-drin_main">
+        <div>
+          <img
+            style="max-width: 100%; max-height: 50%"
+            src="./images/FEND_Coffee_Costa-Rica 2.png"
+            alt="A bag of our 'Costa Rica' coffee blend."
+          />
+        </div>
+        <img src="./images/icons/Icon-Kaffee-Tasse.svg" alt="Kaffee Tasse">
+        <img src="./images/icons/Icon-Kaffee-Schaufel.svg" alt="Kaffee Schaufel">
+        <img src="./images/icons/Icon-Kaffee-Pflanze.svg" alt="Kaffee Pflanze">
+      </div>
+      <div class="shop-button-container">
+        <a class="shop-button" href="#">zum Shop</a>
+      </div>
+    </div>
+
+    </section>
+
+    {{> map }}
+    {{> footer }}
   </body>
 </html>

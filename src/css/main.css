@@ -1,3 +1,8 @@
 @import "variables.css";
 @import "base.css";
 @import "components/hero.css";
+@import "components/footer.css";
+@import "components/map.css";
+@import "components/impressum.css";
+@import "components/cafe.css";
+@import "components/herkunft.css";

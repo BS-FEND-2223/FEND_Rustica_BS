@@ -1,7 +1,54 @@
 :root {
   /* Colors */
-  --div-color: red;
+  /* Might not need all, but the styles are here now */
+  --anthrazit: #1a1a1a;
+  --kraftpapier: #d7be9d;
+  --petrol: #006d7e;
+  --rosa: #edd1c9;
+  --orange: #d77c12;
+  --medium-grey: #737373;
+  --light-grey: #e9e9e9;
+  --background-grey: #e5e5e5;
+  --button-hover: #3a3734;
+  --button-active: #d7be9d;
+  --hero-background: rgba(0, 0, 0, 0.3);
+  --half-dark-background: rgba(0,0,0,0.5);
 
   /* Text Styles */
-  --h2-font-size: 26px;
+  --h1-font-size: 64px;
+  --h1-font-weight: 900;
+  --h1-line-height: 1, 1%;
+
+  --h2-font-size: 36px;
+  --h2-font-weight: 900;
+  --h2-line-height: 1, 1%;
+
+  --h3-font-size: 32px;
+  --h3-font-weight: 900;
+  --h3-line-height: 1, 1%;
+
+  --body-font-size: 14px;
+  --body-font-weight: 400;
+  --body-line-height: 1, 3%;
+  
+  --rustica-footer-font-size-m: 24px;
+  --rustica-footer-font-weight-m: 900;
+
+  /* Non-mobile text styles */
+
+  --h1-d-font-size: 96px;
+  --h1-d-font-weight: 900;
+  --h1-d-line-height: 1, 1%;
+
+  --h2-d-font-size: 48px;
+  --h2-d-font-weight: 900;
+  --h2-d-line-height: 1, 1%;
+
+  --h3-d-font-size: 42px;
+  --h3-d-font-weight: 900;
+  --h3-d-line-height: 1, 1%;
+
+  --body-d-font-size: 18px;
+  --body-d-font-weight: 400;
+  --body-d-line-height: 1, 3%;
 }
