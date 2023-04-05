@@ -1,0 +1,33 @@
+.impressum {
+    margin-left: 24px;
+    margin-right: 24px;
+
+    @media (min-width: 992px) {
+        margin-left: 100px;
+        margin-right: 100px;
+        max-width: 60vw;
+    }
+}
+
+impressum_list {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+    .impressum_lead {
+        margin-top: 133px;
+        
+        margin-bottom: 38px;
+    }
+
+    .impressum_follow {
+        
+        margin-bottom: 38px;
+    }
+
+    .impressum_last {
+        
+        margin-bottom: 100px;
+    }
+

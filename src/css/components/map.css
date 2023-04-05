@@ -1,0 +1,23 @@
+.rustica_standort_header {
+        margin-top: 60px;
+        margin-left: 5%;
+        margin-bottom: 35px;
+    }
+
+.rustica_standort_karte {
+        height: 320px;
+
+      @media (min-width: 768px){
+        height: 450px;
+        text-align: center;
+      }}
+
+      .rustica_standort_karte_iframe {
+        height: 90%;
+        width: 100%;
+        border: 1px solid black;
+
+        @media (min-width: 768px){
+          width: 90%;
+        }
+      }

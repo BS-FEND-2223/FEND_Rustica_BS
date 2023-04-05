@@ -1,0 +1,247 @@
+.header {
+
+    
+    &__background {
+        position: relative;
+        height: 75vh;
+        background-image: linear-gradient(to right bottom,
+        rgba(#000, 0.3),
+        rgba(#000, 0.3)), url(../images/FEND-Coffee-latte-art-3.jpg);
+        background-size: cover;
+        background-position: center;
+
+        @media (min-width: 568px) {
+            height: 65vh;
+        }
+        
+        &__cafe {
+            position: relative;
+            height: 41vh;
+            background-image: linear-gradient(to right bottom,
+            rgba(#000, 0.3),
+            rgba(#000, 0.3)), url(../images/FEND-Coffee-shop.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        &__herkunft {
+            position: relative;
+            height: 41vh;
+            background-image: linear-gradient(to right bottom,
+            rgba(#000, 0.3),
+            rgba(#000, 0.3)), url(../images/FEND-Coffee-beans-hand-2.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+}
+
+    &__navbar {
+        position: relative;
+        padding-left: 24px;
+        padding-top: 10px;
+        padding-right: 24px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (min-width: 992px) {
+            display: none;
+        }   
+    }
+
+    &__navbar_desktop {
+        display: none;
+
+        @media (min-width: 992px){
+            display: flex;
+            padding-left: 102px;
+            padding-right: 102px ;
+            padding-top: 10px;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+
+        &--logo {
+
+        }
+
+        &--menu {
+            margin-top: 7px;
+
+        }
+
+    }
+
+    &__title {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+      
+
+
+        
+    }
+
+    &__title-text {
+
+    }
+
+    &__subtitle {
+        
+    }
+
+    &__blindfield {
+        height: 35px;
+    }
+
+    &__button {
+        color: #fff;
+        width: 163px;
+        height: 48px;
+        background-color: #1a1a1a;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 60px;
+
+        &:hover {
+            background-color: #3a3734;
+        }
+
+        &:active {
+            background-color: #d7be9d;
+        }
+        
+
+    }
+
+
+.open_nav_menu {
+
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    cursor: pointer;
+    z-index: 2;
+    transition: transform 1s ease-out;
+
+}
+
+.toggle .open_nav_menu {
+    
+}
+
+
+.line {
+	width: 100%;
+	height: 3px;
+	border-radius: 5px;
+	background-color: #fff;
+	transition: transform 0.3s ease-out;
+}
+
+.line-b {
+    width: 100%;
+	height: 3px;
+	border-radius: 5px;
+	background-color: #000;
+	transition: transform 0.3s ease-out;
+}
+
+
+
+.line3 {
+	width: 80%;
+	height: 3px;
+	border-radius: 5px;
+	background-color: #fff;
+	transition: transform 0.3s ease-out;
+}
+
+.line3-b {
+    width: 80%;
+	height: 3px;
+	border-radius: 5px;
+	background-color: #000;
+	transition: transform 0.3s ease-out;
+}
+
+.toggle .line1 {
+	background-color: #fff;
+	transform: scale(0.9) rotateZ(-45deg) translate(-6px, 6px);
+}
+
+.toggle .line2 {
+	display: none;
+}
+
+.toggle .line3 {
+	background-color: #fff;
+    width: 100%;
+    transform: scale(0.9) rotateZ(45deg) translate(-6px, -6px);
+}
+
+.toggle .line3-b {
+	background-color: #fff;
+    width: 100%;
+    transform: scale(0.9) rotateZ(45deg) translate(-6px, -6px);
+}
+
+.nav-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 1s cubic-bezier(0.22, 1, 0.36, 1);
+    background-color: rgba(10,10,10, 0.9);
+    overflow: hidden;
+    z-index: 1;
+}
+.hidden{
+    left: -100vw;
+}
+
+.navlinks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.nav-link {
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-link::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: rgba(255,255,255, 0.7);
+        transition: all 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+    }
+
+.nav-link:hover::after {
+        width: 12%;
+    }
+
+
+
+
