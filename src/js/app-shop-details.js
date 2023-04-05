@@ -15,7 +15,7 @@ async function fetchProductsDetail() {
                 <p class="p">
                     ${product.productName}
                 </p>
-                <p class="p">${(product.price * 0,01).toFixed(2) + (" €")}</p>
+                <p class="p">${(products.price * 0,01).toFixed(2) + (" €")}</p>
             
             </article>
     })

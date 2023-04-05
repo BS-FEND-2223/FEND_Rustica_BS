@@ -6,20 +6,24 @@ async function fetchProducts() {
     const productsHtml = products
         .map((products)=> {
         const productsHtml = `
-        <a class="shop-elements" href="./shop.html?id=${products.id}">
-            <article>
-            <h3 class"title--blue">${products.productName}</h3>
-            <p>${products.producteName}</p>
-            <img src="">
-            <span>${products.productPrice}</span>
-            </article>
-        </a>
+        <div>
+            <a class="shop-elements" href="./shop.html?id=${products.id}"></a>
+                <article>
+                <h3 class="title--blue">${products.productName}</h3>
+                <p class="text--red">${products.short}</p>
+                <img src="">
+                <span>
+                <p class="p">Preis pro Packung: ${(products.price * 0.01).toFixed(2) + (" €")}</p>
+                </span>
+                </article>
+        </div>
             `;
         return productsHtml;
         }).join("");
 
     console.log(productsHtml);
-    appContainer.innerHtml = productsHtml;
+    appContainer.innerHTML = productsHtml;
+    console.log(appContainer.innerHTML)
     }
 
 fetchProducts()
